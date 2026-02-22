@@ -1,1 +1,885 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Zakarya Guehche - Data Analyst & Data Scientist spécialisé en Python, SQL, Power BI et Machine Learning">
+    <meta name="keywords" content="Data Analyst, Data Scientist, Python, SQL, Power BI, Machine Learning, Alternance">
+    <meta name="author" content="Zakarya Guehche">
+    
+    <title>Zakarya Guehche | Data Analyst & Scientist</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>ZG<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#experience" class="nav-link">Expérience</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#education" class="nav-link">Formation</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <a href="assets/CV_Zakarya_Guehche.pdf" target="_blank" class="nav-btn">
+                        <i class="fas fa-eye"></i> CV
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    À la recherche d'une alternance
+                </div>
+                <h1 class="hero-title">Bonjour, je suis <span class="gradient-text no-wrap">Zakarya&nbsp;Guehche</span></h1>
+                <h2 class="hero-subtitle">
+                    <span class="typewriter" id="typewriter"></span>
+                </h2>
+                <p class="hero-description">
+                    <span class="no-wrap">Data&nbsp;Analyst</span> & <span class="no-wrap">Data&nbsp;Scientist</span> avec de solides bases en 
+                    <strong>Python</strong>, <strong>SQL</strong>, <strong>Power&nbsp;BI</strong> et 
+                    <strong>Machine&nbsp;Learning</strong>. Je transforme les données en insights 
+                    actionnables pour accompagner la prise de décision.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="3">0</span>
+                        <span class="stat-label">Ans d'expérience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="3">0</span>
+                        <span class="stat-label">Projets réalisés</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="4">0</span>
+                        <span class="stat-label">Années d'études</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> Découvrir mes projets
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Me contacter
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/zakarya-guehche/" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/ZakaryaGuehche" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:zakaryaguehche.pro@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="image-container">
+                    <div class="image-ring"></div>
+                    <div class="image-ring ring-2"></div>
+                    <img src="assets/profile.jpg" alt="Zakarya Guehche - Data Analyst & Scientist" class="profile-img">
+                    <div class="floating-badge badge-1">
+                        <i class="devicon-python-plain colored"></i>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="devicon-postgresql-plain colored"></i>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="floating-badge badge-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="title-number">01.</span> À propos de moi
+            </h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right" data-aos-delay="200">
+                    <p>
+                        Actuellement étudiant en <strong>L3 Mathématiques appliquées</strong> à 
+                        l'Université <span class="no-wrap">Sorbonne&nbsp;Paris&nbsp;Nord</span>, je suis 
+                        admis au <strong>Master of Science Computer Science & Data Science</strong> 
+                        à l'<strong>ESILV</strong> pour la rentrée de septembre 2026.
+                    </p>
+                    <p>
+                        Spécialisé en <span class="highlight no-wrap">analyse&nbsp;de&nbsp;données</span> et 
+                        <span class="highlight no-wrap">data&nbsp;science</span>, j'ai développé de solides 
+                        compétences en Python, SQL, Power BI et statistiques. Mon parcours en mathématiques 
+                        appliquées me permet d'avoir une approche rigoureuse et analytique des problématiques data.
+                    </p>
+                    <p>
+                        Mon objectif : mettre mes compétences au service d'une entreprise dans le cadre d'une 
+                        <strong>alternance de 2 ans</strong> en tant que <span class="no-wrap">Data&nbsp;Analyst</span> 
+                        ou <span class="no-wrap">Data&nbsp;Scientist</span>.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Analyse de données avec Python</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Dashboards Power BI</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Modélisation Machine Learning</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Statistiques avancées</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info" data-aos="fade-left" data-aos-delay="400">
+                    <div class="info-card">
+                        <div class="info-header">
+                            <i class="fas fa-user-tie"></i>
+                            <h3>Informations</h3>
+                        </div>
+                        <ul class="info-list">
+                            <li>
+                                <span class="info-label">Nom</span>
+                                <span class="info-value">Zakarya Guehche</span>
+                            </li>
+                            <li>
+                                <span class="info-label">Formation actuelle</span>
+                                <span class="info-value">L3 Maths Appliquées</span>
+                            </li>
+                            <li>
+                                <span class="info-label">Prochaine formation</span>
+                                <span class="info-value">MSc ESILV (Sept. 2026)</span>
+                            </li>
+                            <li>
+                                <span class="info-label">Rythme alternance</span>
+                                <span class="info-value">3 sem. / 1 sem.</span>
+                            </li>
+                            <li>
+                                <span class="info-label">Localisation</span>
+                                <span class="info-value">Paris</span>
+                            </li>
+                        </ul>
+                        <div class="info-languages">
+                            <h4>Langues</h4>
+                            <div class="language-grid">
+                                <div class="language-item">
+                                    <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="flag-img">
+                                    <span>Français (Natif)</span>
+                                </div>
+                                <div class="language-item">
+                                    <img src="https://flagcdn.com/w40/gb.png" alt="EN" class="flag-img">
+                                    <span>Anglais (Pro)</span>
+                                </div>
+                                <div class="language-item">
+                                    <img src="https://flagcdn.com/w40/sa.png" alt="AR" class="flag-img">
+                                    <span>Arabe (B2)</span>
+                                </div>
+                                <div class="language-item">
+                                    <img src="https://flagcdn.com/w40/es.png" alt="ES" class="flag-img">
+                                    <span>Espagnol (A2)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="title-number">02.</span> Compétences techniques
+            </h2>
+            
+            <div class="skills-grid">
+                <!-- Programmation -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programmation</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="devicon-python-plain colored"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-pandas-original colored"></i>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-numpy-original colored"></i>
+                            <span>NumPy</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-postgresql-plain colored"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-c-plain colored"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Matplotlib</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outils Data -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="150">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3>Outils Data</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Power BI</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-azure-plain colored"></i>
+                            <span>Azure</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-file-excel"></i>
+                            <span>Excel (TCD)</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-jupyter-plain colored"></i>
+                            <span>Jupyter</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-docker-plain colored"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-streamlit-plain colored"></i>
+                            <span>Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Machine Learning</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Scikit-learn</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-area"></i>
+                            <span>Classification</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Clustering</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-wave-square"></i>
+                            <span>Régression</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tree"></i>
+                            <span>Random Forest</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-vector-square"></i>
+                            <span>SVM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mathématiques -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="250">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-square-root-alt"></i>
+                        </div>
+                        <h3>Mathématiques</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Statistiques</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-dice"></i>
+                            <span>Probabilités</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-th"></i>
+                            <span>Algèbre linéaire</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-infinity"></i>
+                            <span>Analyse</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-bezier-curve"></i>
+                            <span>Topologie</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-calculator"></i>
+                            <span>Calcul numérique</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outils Dev -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Outils Dev</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="devicon-git-plain colored"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-github-original"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-vscode-plain colored"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-linux-plain"></i>
+                            <span>Linux</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-latex-original"></i>
+                            <span>LaTeX</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-file-word"></i>
+                            <span>Pack Office</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="350">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-search"></i>
+                            <span>Esprit analytique</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-user-check"></i>
+                            <span>Autonomie</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Adaptabilité</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Esprit critique</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Communication</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-hands-helping"></i>
+                            <span>Travail en équipe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="title-number">03.</span> Expérience professionnelle
+            </h2>
+            <div class="timeline">
+                <!-- Assistant d'éducation -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-info">
+                                <div class="company-logo-placeholder">JV</div>
+                                <div>
+                                    <h3 class="timeline-title no-wrap">Assistant d'éducation en Mathématiques</h3>
+                                    <p class="timeline-subtitle">Collège Jean Vilar - Villetaneuse</p>
+                                </div>
+                            </div>
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                2023 - Présent
+                            </div>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Utilisation d'outils <strong>Excel</strong> et <strong>Google&nbsp;Sheets</strong> pour le suivi et l'organisation pédagogique</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Encadrement des élèves et accompagnement pédagogique personnalisé</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Gestion de groupe et développement des compétences en communication</span>
+                            </li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <div class="tech-item">
+                                <i class="fas fa-file-excel"></i>
+                                <span>Excel</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="devicon-google-plain colored"></i>
+                                <span>Google Sheets</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-users"></i>
+                                <span>Pédagogie</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professeur particulier -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-info">
+                                <div class="company-logo-placeholder">PP</div>
+                                <div>
+                                    <h3 class="timeline-title">Professeur particulier de Mathématiques</h3>
+                                    <p class="timeline-subtitle">Indépendant</p>
+                                </div>
+                            </div>
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                2022 - Présent
+                            </div>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Soutien personnalisé pour lycéens en mathématiques</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Préparation aux examens (Baccalauréat, contrôles)</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Consolidation des bases et méthodologie de travail</span>
+                            </li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <div class="tech-item">
+                                <i class="fas fa-square-root-alt"></i>
+                                <span>Mathématiques</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Pédagogie</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>Accompagnement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="title-number">04.</span> Mes projets
+            </h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Une sélection de mes réalisations en <span class="no-wrap">Data&nbsp;Science</span>, 
+                <span class="no-wrap">Machine&nbsp;Learning</span> et <span class="no-wrap">Business&nbsp;Intelligence</span>
+            </p>
+
+            <!-- Filter Buttons -->
+            <div class="project-filters" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th-large"></i> Tous
+                </button>
+                <button class="filter-btn" data-filter="data-science">
+                    <i class="fas fa-flask"></i> Data Science
+                </button>
+                <button class="filter-btn" data-filter="bi">
+                    <i class="fas fa-chart-bar"></i> Business Intelligence
+                </button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1: Estimation prix véhicules -->
+                <article class="project-card" data-category="data-science" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800');">
+                        <div class="project-overlay">
+                            <a href="https://github.com/ZakaryaGuehche/estimation-prix-vehicules" target="_blank" class="project-link-btn">
+                                <i class="fab fa-github"></i>
+                                <span>Voir le code</span>
+                            </a>
+                        </div>
+                        <span class="project-category-badge">Data Science</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Estimation du prix de véhicules</h3>
+                        <p class="project-description">
+                            Modélisation par Random Forest pour estimer la décote des véhicules. Feature engineering sur kilométrage, motorisation et ancienneté.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="devicon-python-plain colored"></i> Python</span>
+                            <span><i class="devicon-pandas-original colored"></i> Pandas</span>
+                            <span><i class="fas fa-tree"></i> Random Forest</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Analyse de ventes -->
+                <article class="project-card" data-category="bi" data-aos="fade-up" data-aos-delay="150">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800');">
+                        <div class="project-overlay">
+                            <a href="https://github.com/ZakaryaGuehche/analyse-ventes-powerbi" target="_blank" class="project-link-btn">
+                                <i class="fab fa-github"></i>
+                                <span>Voir le code</span>
+                            </a>
+                        </div>
+                        <span class="project-category-badge">Business Intelligence</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Analyse de ventes et reporting</h3>
+                        <p class="project-description">
+                            Dashboard Power BI pour le suivi du chiffre d'affaires et des marges. Automatisation du reporting commercial.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-chart-bar"></i> Power BI</span>
+                            <span><i class="fas fa-file-excel"></i> Excel</span>
+                            <span><i class="fas fa-cogs"></i> Power Query</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Consommation énergétique -->
+                <article class="project-card" data-category="data-science" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800');">
+                        <div class="project-overlay">
+                            <a href="https://github.com/ZakaryaGuehche/analyse-consommation-energetique" target="_blank" class="project-link-btn">
+                                <i class="fab fa-github"></i>
+                                <span>Voir le code</span>
+                            </a>
+                        </div>
+                        <span class="project-category-badge">Data Science</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Analyse consommation énergétique</h3>
+                        <p class="project-description">
+                            Analyse exploratoire de données de consommation énergétique. Identification des pics et recommandations d'optimisation.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="devicon-python-plain colored"></i> Python</span>
+                            <span><i class="devicon-pandas-original colored"></i> Pandas</span>
+                            <span><i class="fas fa-chart-line"></i> Matplotlib</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="projects-cta" data-aos="fade-up">
+                <a href="https://github.com/ZakaryaGuehche" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i> Voir tous mes projets sur GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="title-number">05.</span> Formation
+            </h2>
+            <div class="education-grid">
+                <!-- ESILV -->
+                <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="education-sidebar">
+                        <span class="year-badge upcoming">À venir</span>
+                        <span class="education-year">Sept. 2026 - 2028</span>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <img src="assets/logos/esilv.png" alt="ESILV" class="school-logo">
+                            <div>
+                                <h3 class="no-wrap">MSc Computer Science & Data Science</h3>
+                                <p class="education-school">ESILV - École Supérieure d'Ingénieurs Léonard de Vinci</p>
+                            </div>
+                        </div>
+                        <span class="education-type">
+                            <i class="fas fa-briefcase"></i> En alternance (2 ans)
+                        </span>
+                        <ul class="education-details">
+                            <li>Spécialisation en Data Science et Intelligence Artificielle</li>
+                            <li>Formation avancée en Big Data et Cloud Computing</li>
+                            <li>Projets industriels et recherche appliquée</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sorbonne Paris Nord -->
+                <div class="education-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="education-sidebar">
+                        <span class="year-badge current">En cours</span>
+                        <span class="education-year">2022 - 2026</span>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <img src="assets/logos/sorbonne.png" alt="Sorbonne Paris Nord" class="school-logo">
+                            <div>
+                                <h3>Licence Mathématiques appliquées</h3>
+                                <p class="education-school">Université Sorbonne Paris Nord - Institut Galilée</p>
+                            </div>
+                        </div>
+                        <span class="education-type">
+                            <i class="fas fa-graduation-cap"></i> Parcours AED/MAP
+                        </span>
+                        <ul class="education-details">
+                            <li>Probabilités et Statistiques avancées</li>
+                            <li>Algèbre linéaire et Analyse</li>
+                            <li>Programmation Python</li>
+                            <li>Topologie des espaces métriques</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Baccalauréat -->
+                <div class="education-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="education-sidebar">
+                        <span class="education-year">2022</span>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <div class="school-logo-placeholder">BAC</div>
+                            <div>
+                                <h3>Baccalauréat Scientifique</h3>
+                                <p class="education-school">École EIAF - Paris</p>
+                            </div>
+                        </div>
+                        <ul class="education-details">
+                            <li>Spécialité Mathématiques</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <span class="title-number">06.</span> Me contacter
+            </h2>
+            <div class="contact-content">
+                <div class="contact-text" data-aos="fade-right" data-aos-delay="100">
+                    <h3>Travaillons ensemble !</h3>
+                    <p>
+                        Je suis à la recherche d'une <strong>alternance de 2 ans pour septembre&nbsp;2026</strong> 
+                        en tant que <span class="no-wrap">Data&nbsp;Analyst</span> ou <span class="no-wrap">Data&nbsp;Scientist</span>.
+                    </p>
+                    <p>
+                        Que vous ayez un projet data, une opportunité d'alternance ou simplement envie 
+                        d'échanger, n'hésitez pas à me contacter. Je serai ravi de discuter avec vous !
+                    </p>
+                    <div class="contact-info">
+                        <a href="mailto:zakaryaguehche.pro@gmail.com" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">zakaryaguehche.pro@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/zakarya-guehche/" target="_blank" class="contact-item">
+                            <div class="contact-icon linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">linkedin.com/in/zakarya-guehche</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/ZakaryaGuehche" target="_blank" class="contact-item">
+                            <div class="contact-icon github">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">github.com/ZakaryaGuehche</span>
+                            </div>
+                        </a>
+                        <a href="tel:+33605801634" class="contact-item">
+                            <div class="contact-icon phone">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Téléphone</span>
+                                <span class="contact-value">06 05 80 16 34</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-container" data-aos="fade-left" data-aos-delay="200">
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/VOTRE_ID" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet</label>
+                                <input type="text" id="name" name="name" required placeholder="Votre nom">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Objet de votre message">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>ZG<span class="logo-bracket">/&gt;</span>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/zakarya-guehche/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/ZakaryaGuehche" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:zakaryaguehche.pro@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <p class="footer-text">
+                    Conçu et développé par Zakarya Guehche
+                </p>
+                <p class="footer-copyright">
+                    © 2024 Zakarya Guehche. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
