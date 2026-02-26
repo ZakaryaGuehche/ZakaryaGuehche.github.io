@@ -1850,3 +1850,12 @@ img {
 [data-aos] {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* Fallback si image non chargée */
+.profile-img {
+    background: var(--gradient-1);
+}
+
+.profile-img[src*="ui-avatars"] {
+    border-color: var(--primary-light);
+}
